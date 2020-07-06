@@ -1,0 +1,260 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    overflow-x: hidden;
+}
+
+/* Banner & Nav */
+
+#head-container {
+    position: relative;
+    width: 100vw;
+    height: 99vh;
+    background-image: url('../img/occupy-wall-street.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-bottom: 15px solid rgb(241, 221, 216);
+}
+
+#color-cover {
+    position: absolute;
+    z-index: 1; 
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 99vh;
+    background-color: #f71149;
+    opacity: .7;
+}
+
+#logo {
+    margin-top: 35vh;
+    margin-left: 25px;
+    width: 150px;
+}
+
+ul,
+#logo {
+    position: relative;
+    z-index: 2;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+   /* font-family: Helvetica, sans-serif; */
+    font-family: Georgia, 'Times New Roman';
+    font-size: 1.3rem; 
+    margin-top: 3vh;   
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    width: 120px;
+    color: #ffffff;
+    padding: 5px 35px;
+    margin: 0 35px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+li {
+    list-style: none;
+}
+
+li a:hover {
+border-bottom: 1px solid #ffffff;
+opacity: .8;
+}
+
+
+#moto {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.6em;
+    padding: 25px 0;
+    font-style: italic;
+    font-family: 'Fredoka One', cursive;
+    z-index: 2;
+}
+
+/* Content */
+
+
+
+
+#objective {
+    height: 100vh;
+    padding: 25px 0;
+}
+
+h3 {
+    color: #f71149;
+    font-family: Helvetica, sans-serif;
+}
+
+
+#selection {
+    width: 100vw;
+    height: 10vh;
+    background-color: #ffffff;
+}
+
+
+.item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 15px 85px;
+}
+
+
+#p-btn {
+    border: 2px solid #f71149;
+    text-decoration: none;
+    color: #f71149;
+    display: inline-flex;
+    justify-content: center;
+    width: 8em;
+    text-align: center;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+   /* font-family: Helvetica, sans-serif; */
+    font-family: Georgia, 'Times New Roman';
+    font-size: 1.3rem; 
+    margin-top: 15px;
+}
+
+#p-btn:hover {
+    background-color:#f71149;
+    color: #ffffff;
+}
+
+#p-btn span {
+    padding: 0 10px;
+    padding-top: 15px;
+}
+
+
+
+
+/* Contact */
+
+#contact {
+    background-color:#f71149;
+    padding: 55px 0;
+}
+
+#bottom-logo {
+    width: 95px;
+    height: auto;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    max-width: 650px;
+    height: auto;
+    padding: 20px 15px;
+    margin: 0 auto;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+textarea,
+input {
+    margin: 8px 45px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    outline: none;
+}
+
+.logo-adjust {
+    margin: 20px 0;
+} 
+
+textarea {
+    border: 2px solid #f71149;
+    font-family: Arial, Helvetica, sans-serif;    
+}
+
+.reg-input {
+    border: 2px solid #f71149;
+    width: 45%;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit-btn {
+    width: 95px;
+    height: auto;
+    background-color: #f71149;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+#submit-btn:hover {
+    opacity: .8;
+}
+
+#patreon {
+    width: 55px;
+    height: auto;
+}
+
+/* Footer */
+
+#recognize {
+    color:white;
+    background-color: #f71149;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Screen adjustments */
+
+
+@media screen and (max-width: 1300px) {
+    .item-container {
+        display: block;
+    }
+
+    #objective {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 775px) {
+    .item-container img {
+        width: 100%;
+        height: auto;
+    }
+}
