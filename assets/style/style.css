@@ -131,7 +131,6 @@ h3 {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-   /* font-family: Helvetica, sans-serif; */
     font-family: Georgia, 'Times New Roman';
     font-size: 1.3rem; 
     margin-top: 15px;
@@ -204,22 +203,25 @@ textarea {
 }
 
 #submit-btn {
-    width: 95px;
+    border: 2px solid #f71149;
+    text-decoration: none;
+    color: #f71149;
+    display: inline-flex;
+    justify-content: center;
+    width: 4em;
     height: auto;
-    background-color: #f71149;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    border: none;
+    text-align: center;
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    font-family: sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman';
+    font-size: 1.3rem; 
+    margin-top: 15px;
 }
 
 #submit-btn:hover {
-    opacity: .8;
+    background-color:#f71149;
+    color: #ffffff;
 }
 
 #patreon {
